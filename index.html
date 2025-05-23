@@ -8,44 +8,72 @@ title: Avanti Chandratre
 <p>Hi, I'm <strong>Avanti</strong> — a Business Analytics student passionate about data, AI, and impact.</p>
 
 <ul>
-  <li>📊 Check out my projects below</li>
-  <li>📄 <a href="Resume.pdf">Download Resume</a></li>
-  <li>🌐 <a href="https://www.linkedin.com/in/avantic">Connect on LinkedIn</a></li>
+  <li>📄 <a href="Resume.pdf" class="button">Download Resume</a></li>
+  <li>🌐 <a href="https://www.linkedin.com/in/avantic" target="_blank">Connect on LinkedIn</a></li>
 </ul>
 
 <p>This site is under construction — stay tuned!</p>
 
-
-
+<nav style="margin-top: 20px;">
+  <a href="#projects" style="margin-right: 15px;">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
 <hr>
 
-<h2>📁 Featured Projects</h2>
+<h2 id="projects">📁 Featured Projects</h2>
 
-<div style="display: flex; flex-direction: column; gap: 20px; padding-top: 10px;">
-
-  <div style="border: 1px solid #ccc; padding: 15px; border-radius: 10px; background-color: #f9f9f9;">
+<section style="padding-top: 10px; display: grid; gap: 20px;">
+  <div class="card">
     <h3>💼 HR Email Automation</h3>
-    <p>An end-to-end NLP pipeline using LLMs and zero-shot classification to automate HR email responses.</p>
+    <p>An NLP pipeline using LLMs and zero-shot classification to automate HR email responses.</p>
     <a href="https://github.com/AvantiChandratre/hr-email-automation" target="_blank">🔗 View on GitHub</a>
   </div>
-
-  <div style="border: 1px solid #ccc; padding: 15px; border-radius: 10px; background-color: #f9f9f9;">
+  <div class="card">
     <h3>🏡 Airbnb CRM Optimization</h3>
-    <p>First-place class project optimizing host retention strategies using clustering, uplift modeling, and visualization.</p>
+    <p>First-place project using clustering and uplift modeling to improve host retention strategies.</p>
     <a href="https://github.com/AvantiChandratre/Customer-Relationship-Management-The-Case-of-Airbnb" target="_blank">🔗 View on GitHub</a>
   </div>
-
-  <div style="border: 1px solid #ccc; padding: 15px; border-radius: 10px; background-color: #f9f9f9;">
+  <div class="card">
     <h3>❤️ Cardio Predictive Analytics</h3>
-    <p>Built a random forest model on the Kaggle heart dataset to flag at-risk patients with over 95% accuracy.</p>
+    <p>Built a 95%+ accuracy model to flag cardiovascular risk using the Kaggle Heart dataset.</p>
     <a href="https://github.com/AvantiChandratre/cardio-predictive-analytics" target="_blank">🔗 View on GitHub</a>
   </div>
-
-  <div style="border: 1px solid #ccc; padding: 15px; border-radius: 10px; background-color: #f9f9f9;">
+  <div class="card">
     <h3>🗺️ Optimal Drugstore Location (SQL)</h3>
-    <p>Used SQL geospatial queries and optimization logic to recommend best locations for new pharmacy branches.</p>
+    <p>Used SQL geospatial queries to recommend ideal locations for new pharmacy branches.</p>
     <a href="https://github.com/AvantiChandratre/optimal-drugstore-location-sql" target="_blank">🔗 View on GitHub</a>
   </div>
+</section>
 
-</div>
+<hr>
+
+<h2 id="contact">📬 Contact Me</h2>
+<p>If you'd like to get in touch, you can reach me at <a href="mailto:chand231@purdue.edu">chand231@purdue.edu</a> or via <a href="https://www.linkedin.com/in/avantic" target="_blank">LinkedIn</a>.</p>
+
+<style>
+  .card {
+    border: 1px solid #999;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    padding: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+  }
+  .button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  @media (max-width: 600px) {
+    section {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
