@@ -104,27 +104,24 @@ section {
   max-width: 1000px;
   margin: 0 auto;
   padding: 60px 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px 20px;
-  justify-items: center;
-  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  overflow-x: auto;
 }
 
 .timeline-line {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 100%;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
   background: #FFB347;
   z-index: 0;
 }
 
 .experience {
   position: relative;
-  width: 100%;
   background: #111;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(255, 183, 71, 0.2);
@@ -133,6 +130,18 @@ section {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.6s ease-in-out;
+  min-width: 250px;
+  text-align: center;
+}
+
+.experience::before {
+  content: attr(data-date);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #bbb;
+  font-size: 0.9em;
 }
 
 .experience.reveal {
@@ -145,10 +154,7 @@ section {
 }
 
 .experience time {
-  display: block;
-  font-size: 0.95em;
-  color: #bbb;
-  margin-bottom: 10px;
+  display: none; /* hidden because we're using data-date */
 }
 
 /* Dropdown */
