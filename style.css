@@ -180,17 +180,21 @@ button {
 /* Project Cards */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* Fixed 3-column layout */
+  gap: 30px;
+  justify-items: center;
 }
 
 .project-card {
   background: #111;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 30px;
+  border-radius: 12px;
   border: 2px solid #FFB347;
+  width: 90%;
+  max-width: 340px; /* Optional max width for better spacing */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .project-card:hover {
   transform: scale(1.03);
   box-shadow: 0 0 12px rgba(255, 183, 71, 0.4);
@@ -246,4 +250,11 @@ button {
 .dropdown-content li {
   color: #eee;
   margin-bottom: 8px;
+}
+
+/* Responsive Layout: Stack cards on smaller screens */
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
 }

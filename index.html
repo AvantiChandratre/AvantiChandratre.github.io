@@ -188,24 +188,18 @@
 
   <script>
     function toggleDropdown(button) {
+      // Close any open dropdowns first
+      document.querySelectorAll('.dropdown-content').forEach((content) => {
+        if (content !== button.nextElementSibling) {
+          content.style.display = 'none';
+        }
+      });
+  
+      // Then toggle the current one
       const content = button.nextElementSibling;
       content.style.display = content.style.display === 'block' ? 'none' : 'block';
     }
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-
-    document.querySelectorAll('.experience').forEach((el) => {
-      observer.observe(el);
-    });
   </script>
+  
 </body>
 </html>
