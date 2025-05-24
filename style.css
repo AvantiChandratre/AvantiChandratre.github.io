@@ -39,46 +39,54 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
     padding-top: 100px;
     padding-bottom: 60px;
     text-align: left;
   }
   
   .profile-pic {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     border: 6px solid #E0AFA0; /* rose gold border */
     margin-bottom: 20px;
+    margin-left: 20px;
   }
   
   #hero .left {
-    flex: 1 1 300px;
+    flex: 1 1 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
   #hero .left h1 {
-    font-size: 2.5em;
+    font-size: 3.2em;
     margin-top: 20px;
     color: #FFB347;
+    text-align: center;
   }
   
   #hero .left p {
-    color: #bbb;
+    color: #ccc;
     font-size: 1.1em;
+    font-weight: 500;
+    text-align: center;
   }
   
   #hero .right {
-    flex: 2 1 400px;
+    flex: 2 1 500px;
     padding: 20px;
+    border: 1px solid #FFB347;
+    border-radius: 12px;
+    background-color: #111;
   }
   
   #hero .right p {
-    font-size: 1.1em;
+    font-size: 1.15em;
     line-height: 1.8;
+    color: #eee;
   }
   
   /* Timeline Section */
