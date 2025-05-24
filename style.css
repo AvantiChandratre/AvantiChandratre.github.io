@@ -98,22 +98,23 @@ section {
   color: #eee;
 }
 
-/* Horizontal Timeline */
+/* Horizontal Alternating Timeline */
 .timeline.horizontal {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: start;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding: 60px 0;
-  gap: 30px;
+  padding: 100px 0;
+  gap: 60px;
 }
 
 .timeline.horizontal::before {
   content: "";
   position: absolute;
-  top: calc(50% + 20px);
+  top: 50%;
   left: 0;
   height: 4px;
   width: 100%;
@@ -137,14 +138,14 @@ section {
   scroll-snap-align: center;
 }
 
-.experience::before {
-  content: attr(data-date);
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #bbb;
-  font-size: 0.9em;
+.experience:nth-child(odd) {
+  align-self: flex-start;
+  margin-top: -80px;
+}
+
+.experience:nth-child(even) {
+  align-self: flex-end;
+  margin-bottom: -80px;
 }
 
 .experience::after {
@@ -159,6 +160,16 @@ section {
   border: 3px solid #fff;
   border-radius: 50%;
   z-index: 2;
+}
+
+.experience::before {
+  content: attr(data-date);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #bbb;
+  font-size: 0.9em;
 }
 
 .experience.reveal {
