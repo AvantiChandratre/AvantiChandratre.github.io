@@ -209,3 +209,19 @@ button {
   border-left: 4px solid #E0AFA0;
   border-radius: 10px;
 }
+
+/* Education */
+.education-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.education-list li {
+  margin-bottom: 20px;
+}
+
+.education-list li ul {
+  list-style-type: circle;
+  margin-top: 10px;
+  margin-left: 20px;
+}
