@@ -33,14 +33,17 @@
   <section id="work">
     <h2>Work Experience</h2>
     <div class="timeline horizontal">
-      <div class="experience">
+      <div class="timeline-line"></div>
+
+      <div class="experience up">
         <h3>Valtech (Incoming)</h3>
         <button onclick="toggleDropdown(this)">Details</button>
         <div class="dropdown-content">
           <p>Starting May 2025 — Strategic internship for market research and platform development.</p>
         </div>
       </div>
-      <div class="experience">
+
+      <div class="experience down">
         <h3>Prediction Guard</h3>
         <button onclick="toggleDropdown(this)">Details</button>
         <div class="dropdown-content">
@@ -50,7 +53,8 @@
           • Led evaluation workflows for open-source LLMs.</p>
         </div>
       </div>
-      <div class="experience">
+
+      <div class="experience up">
         <h3>Fractal Analytics (Full Time)</h3>
         <button onclick="toggleDropdown(this)">Details</button>
         <div class="dropdown-content">
@@ -62,7 +66,8 @@
           • Managed 3 teammates in Agile.</p>
         </div>
       </div>
-      <div class="experience">
+
+      <div class="experience down">
         <h3>Fractal Analytics (Intern)</h3>
         <button onclick="toggleDropdown(this)">Details</button>
         <div class="dropdown-content">
@@ -115,6 +120,21 @@
       const content = button.nextElementSibling;
       content.style.display = content.style.display === 'block' ? 'none' : 'block';
     }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.experience').forEach((el) => {
+      observer.observe(el);
+    });
   </script>
 </body>
 </html>
