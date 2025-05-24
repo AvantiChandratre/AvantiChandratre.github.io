@@ -188,7 +188,6 @@
 
   <script>
     function toggleDropdown(button) {
-      // Close all dropdowns
       document.querySelectorAll('.dropdown-content').forEach((content) => {
         if (content !== button.nextElementSibling) {
           content.style.display = 'none';
@@ -196,13 +195,29 @@
         }
       });
   
-      // Toggle the selected one
       const content = button.nextElementSibling;
       const isOpen = content.style.display === 'block';
       content.style.display = isOpen ? 'none' : 'block';
       button.parentElement.classList.toggle('active-card', !isOpen);
     }
+  
+    // Reveal experience cards on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+  
+    document.querySelectorAll('.experience').forEach((el) => {
+      observer.observe(el);
+    });
   </script>
+  
   
   
 </body>
