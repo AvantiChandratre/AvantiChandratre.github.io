@@ -237,3 +237,13 @@ button {
   margin: 5px 0;
   color: #ccc;
 }
+
+.dropdown-content ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.dropdown-content li {
+  color: #eee;
+  margin-bottom: 8px;
+}
