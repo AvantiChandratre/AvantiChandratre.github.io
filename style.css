@@ -200,11 +200,12 @@ button {
 
 .project-card:hover {
   box-shadow: 0 0 12px rgba(255, 183, 71, 0.4);
-  z-index: 1;
 }
 
-.project-card:hover:not(:has(.dropdown-content[style*="block"])) {
+.project-card.active-card {
   transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(255, 183, 71, 0.4);
+  z-index: 1;
 }
 
 /* Certification */

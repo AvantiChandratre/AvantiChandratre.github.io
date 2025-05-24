@@ -188,18 +188,22 @@
 
   <script>
     function toggleDropdown(button) {
-      // Close any open dropdowns first
+      // Close all dropdowns
       document.querySelectorAll('.dropdown-content').forEach((content) => {
         if (content !== button.nextElementSibling) {
           content.style.display = 'none';
+          content.parentElement.classList.remove('active-card');
         }
       });
   
-      // Then toggle the current one
+      // Toggle the selected one
       const content = button.nextElementSibling;
-      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      const isOpen = content.style.display === 'block';
+      content.style.display = isOpen ? 'none' : 'block';
+      button.parentElement.classList.toggle('active-card', !isOpen);
     }
   </script>
+  
   
 </body>
 </html>
