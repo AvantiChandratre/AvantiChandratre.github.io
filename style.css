@@ -180,9 +180,11 @@ button {
 /* Project Cards */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Fixed 3-column layout */
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  justify-items: center;
+  justify-content: center;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 .project-card {
@@ -191,7 +193,7 @@ button {
   border-radius: 12px;
   border: 2px solid #FFB347;
   width: 90%;
-  max-width: 340px; /* Optional max width for better spacing */
+  max-width: 340px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -207,6 +209,7 @@ button {
   flex-direction: column;
   gap: 20px;
 }
+
 .cert {
   background: #111;
   padding: 20px;
@@ -256,5 +259,6 @@ button {
 @media (max-width: 900px) {
   .project-grid {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    max-width: 100%;
   }
 }
