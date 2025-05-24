@@ -35,17 +35,26 @@ body {
   
   /* Hero Section */
   #hero {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
     padding-top: 100px;
     padding-bottom: 60px;
+    text-align: left;
   }
   
   .profile-pic {
-    width: 160px;
-    height: 160px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     border: 4px solid #E0AFA0; /* rose gold border */
     margin-bottom: 20px;
+  }
+  
+  #hero div {
+    flex: 1 1 300px;
   }
   
   /* Timeline Section */
