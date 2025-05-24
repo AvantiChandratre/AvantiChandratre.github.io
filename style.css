@@ -188,7 +188,7 @@ button {
   background: #111;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid #E0AFA0;
+  border: 2px solid #FFB347;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .project-card:hover {
@@ -220,7 +220,7 @@ button {
 
 .education-card {
   background-color: #111;
-  border: 1px solid #E0AFA0;
+  border: 2px solid #FFB347;
   border-radius: 10px;
   box-shadow: 2px 2px 12px rgba(255, 183, 71, 0.2);
   padding: 20px;
