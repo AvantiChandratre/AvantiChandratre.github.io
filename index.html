@@ -4,10 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Avanti Chandratre</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="sticky-nav">
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#work">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+    </nav>
+  </header>
+
   <section id="hero">
     <img src="your-photo.jpg" alt="Avanti Chandratre" class="profile-pic" />
     <h1>Avanti Chandratre</h1>
@@ -21,25 +32,45 @@
 
   <section id="work">
     <h2>Work Experience</h2>
-    <div class="timeline">
-      <!-- Each .experience block will grow from center with JS animation -->
-      <div class="experience left">
-        <h3>Fractal Analytics (Intern)</h3>
+    <div class="timeline horizontal">
+      <div class="experience">
+        <h3>Valtech (Incoming)</h3>
         <button onclick="toggleDropdown(this)">Details</button>
         <div class="dropdown-content">
-          <p>Worked on data visualization and dashboard development.</p>
-          <a href="#">View GitHub</a>
+          <p>Starting May 2025 — Strategic internship for market research and platform development.</p>
         </div>
       </div>
-      <div class="experience right">
+      <div class="experience">
+        <h3>Prediction Guard</h3>
+        <button onclick="toggleDropdown(this)">Details</button>
+        <div class="dropdown-content">
+          <p>Data Science Intern (Remote)<br>Dec 2024 - Apr 2025<br>
+          • Benchmarked LLM risks (prompt injection, sensitivity, PII).<br>
+          • Designed mitigation strategies.<br>
+          • Led evaluation workflows for open-source LLMs.</p>
+        </div>
+      </div>
+      <div class="experience">
         <h3>Fractal Analytics (Full Time)</h3>
         <button onclick="toggleDropdown(this)">Details</button>
         <div class="dropdown-content">
-          <p>Led BI dashboard development projects for global clients.</p>
-          <a href="#">View GitHub</a>
+          <p>Imagineer / Associate Business Analyst<br>Jul 2022 - Jul 2024<br>
+          • Led Power BI team; $50K revenue boost.<br>
+          • KPI dashboards for global F500 client.<br>
+          • Automated EDA workflows.<br>
+          • Optimized reports for performance.<br>
+          • Managed 3 teammates in Agile.</p>
         </div>
       </div>
-      <!-- Add PG + Valtech similarly -->
+      <div class="experience">
+        <h3>Fractal Analytics (Intern)</h3>
+        <button onclick="toggleDropdown(this)">Details</button>
+        <div class="dropdown-content">
+          <p>Data Analyst Intern (Remote)<br>May 2021 - Jul 2021<br>
+          • Boosted COVID-19 neural model accuracy.<br>
+          • Partnered with CC Hellenic for QA & testing.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -54,7 +85,6 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="project-grid">
-      <!-- Each card has hover scale + shadow -->
       <div class="project-card">
         <h3>Airbnb CRM</h3>
         <button onclick="toggleDropdown(this)">Details</button>
@@ -63,7 +93,6 @@
           <a href="#">View GitHub</a>
         </div>
       </div>
-      <!-- Add more cards -->
     </div>
   </section>
 
