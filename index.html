@@ -9,20 +9,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- ---------- NAV ---------- -->
   <header class="sticky-nav">
     <nav>
       <a href="#hero">Home</a>
       <a href="#work">Experience</a>
       <a href="#education">Education</a>
       <a href="#projects">Projects</a>
+      <a href="#certs">Certifications</a>
       <a href="#reachout">Reach Out</a>
     </nav>
   </header>
 
-  <!-- ---------- HERO – 70 % SPLIT ---------- -->
+  <!-- ---------- HERO – 50 % SPLIT ---------- -->
   <section id="hero" class="hero-split">
     <div class="hero-left">
-      <img src="your-photo.jpg" alt="Avanti Chandratre" class="hero-photo">
+      <img src="profile.jpg" alt="Avanti Chandratre" class="hero-photo">
     </div>
     <div class="hero-right">
       <div class="box">
@@ -39,7 +41,7 @@
     </div>
   </section>
 
-  <!-- ---------- EXPERIENCE – CLASSIC ALTERNATING ---------- -->
+  <!-- ---------- EXPERIENCE – ALTERNATING TIMELINE ---------- -->
   <section id="work">
     <h2>Professional Journey</h2>
     <div class="timeline">
@@ -73,13 +75,28 @@
     </div>
   </section>
 
-  <!-- ---------- PROJECTS – 2-COLUMN XL ---------- -->
+  <!-- ---------- EDUCATION ---------- -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="cards">
+      <div class="card box">
+        <strong>Purdue University</strong>
+        <span>MS Business Analytics & Information Management — Aug 2025</span>
+      </div>
+      <div class="card box">
+        <strong>NIT Warangal</strong>
+        <span>BS Mechanical Engineering — May 2022</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- PROJECTS – 4 SMALL TILES / SCROLL ---------- -->
   <section id="projects">
     <h2>Featured Projects</h2>
     <div class="proj-grid">
       <div class="proj-card">
         <a class="cover-link" href="https://linkedin.com/in/avantic" target="_blank" aria-label="HR Email Automation"></a>
-        <div class="img-back"><img src="hremail.png" alt="HR Email Automation"></div>
+        <div class="img-back"><img src="proj1.jpg" alt="HR Email Automation"></div>
         <div class="proj-info">
           <h3>HR Email Automation</h3>
           <p>LLM classifier + auto-responder</p>
@@ -97,7 +114,7 @@
 
       <div class="proj-card">
         <a class="cover-link" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Cardio Risk Predictor"></a>
-        <div class="img-back"><img src="cardio.jpeg" alt="Cardio Risk Predictor"></div>
+        <div class="img-back"><img src="proj3.jpg" alt="Cardio Risk Predictor"></div>
         <div class="proj-info">
           <h3>Cardio Risk Predictor</h3>
           <p>Spark MLlib RF → 95 % accuracy</p>
@@ -115,58 +132,53 @@
     </div>
   </section>
 
-<!-- ---------- CERTIFICATIONS – MINI TILES ---------- -->
-<section id="certs">
-  <h2>Licenses & Certifications</h2>
-  <div class="cert-grid">
-    <!-- 1  dbt  -->
-    <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="dbt Fundamentals">
-      <img src="dbt.png" alt="dbt Fundamentals">
-      <div class="cert-info">
-        <h3>dbt Fundamentals</h3>
-        <p>dbt Labs · Sep 2025</p>
-      </div>
-    </a>
+  <!-- ---------- CERTIFICATIONS – MINI TILES ---------- -->
+  <section id="certs">
+    <h2>Licenses & Certifications</h2>
+    <div class="cert-grid">
+      <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="dbt Fundamentals">
+        <img src="dbt.png" alt="dbt Fundamentals">
+        <div class="cert-info">
+          <h3>dbt Fundamentals</h3>
+          <p>dbt Labs · Sep 2025</p>
+        </div>
+      </a>
 
-    <!-- 2  aCAP  -->
-    <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="aCAP">
-      <img src="acap.png" alt="aCAP">
-      <div class="cert-info">
-        <h3>Academic Pathway aCAP</h3>
-        <p>INFORMS · Aug 2025</p>
-      </div>
-    </a>
+      <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="aCAP">
+        <img src="acap.png" alt="aCAP">
+        <div class="cert-info">
+          <h3>Academic Pathway aCAP</h3>
+          <p>INFORMS · Aug 2025</p>
+        </div>
+      </a>
 
-    <!-- 3  Tableau  -->
-    <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Tableau Desktop Specialist">
-      <img src="tableau.png" alt="Tableau Desktop Specialist">
-      <div class="cert-info">
-        <h3>Tableau Desktop Specialist</h3>
-        <p>Tableau · Jun 2025</p>
-      </div>
-    </a>
+      <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Tableau Desktop Specialist">
+        <img src="tableau.png" alt="Tableau Desktop Specialist">
+        <div class="cert-info">
+          <h3>Tableau Desktop Specialist</h3>
+          <p>Tableau · Jun 2025</p>
+        </div>
+      </a>
 
-    <!-- 4  Alteryx  -->
-    <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Alteryx Designer Core">
-      <img src="alteryx.png" alt="Alteryx Designer Core">
-      <div class="cert-info">
-        <h3>Alteryx Designer Core</h3>
-        <p>Alteryx · May 2025</p>
-      </div>
-    </a>
+      <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Alteryx Designer Core">
+        <img src="alteryx.png" alt="Alteryx Designer Core">
+        <div class="cert-info">
+          <h3>Alteryx Designer Core</h3>
+          <p>Alteryx · May 2025</p>
+        </div>
+      </a>
 
-    <!-- 5  Azure AI  -->
-    <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Azure AI Fundamentals">
-      <img src="azure-ai.png" alt="Azure AI Fundamentals">
-      <div class="cert-info">
-        <h3>Azure AI Fundamentals</h3>
-        <p>Microsoft · Oct 2024</p>
-      </div>
-    </a>
-  </div>
-</section>
-  
-  <!-- ---------- REACH-OUT ---------- -->
+      <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Azure AI Fundamentals">
+        <img src="azure-ai.png" alt="Azure AI Fundamentals">
+        <div class="cert-info">
+          <h3>Azure AI Fundamentals</h3>
+          <p>Microsoft · Oct 2024</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ---------- REACH-OUT – CLEAN ---------- -->
   <section id="reachout">
     <div class="box">
       <h2>Let’s Build Something Together</h2>
@@ -179,7 +191,7 @@
     const observer=new IntersectionObserver((entries)=>{
       entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('show');});
     },{threshold:.2});
-    document.querySelectorAll('.timeline-item, .card, .tile, .box').forEach(el=>observer.observe(el));
+    document.querySelectorAll('.timeline-item, .card, .tile, .box, .proj-card, .cert-card').forEach(el=>observer.observe(el));
   </script>
 </body>
 </html>
