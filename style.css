@@ -170,3 +170,47 @@ section > h2{
   .hero-split{flex-direction:column;height:auto;}
   .hero-photo{max-height:50vh;}
 }
+
+/* =====  2-COLUMN XL PROJECT GRID  ===== */
+.proj-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:2.5rem;
+  max-width:var(--max-width);
+  margin:auto;
+}
+.proj-card{
+  position:relative;
+  background:var(--surface);
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  transition:transform .3s ease;
+}
+.proj-card:hover{transform:translateY(-6px);}
+.proj-card img{
+  width:100%;
+  height:260px;          /* XL image area */
+  object-fit:cover;
+}
+.proj-info{
+  padding:1.2rem 1.5rem;
+}
+.proj-info h3{
+  font-size:1.25rem;
+  margin:0 0 .25rem;
+  color:var(--heading);
+}
+.proj-info p{
+  margin:0;
+  color:var(--muted);
+  font-size:.95rem;
+}
+.cover-link{          /* invisible link over whole card */
+  position:absolute;
+  inset:0;
+  z-index:2;
+}
+@media(max-width:800px){
+  .proj-grid{grid-template-columns:1fr;}
+}
