@@ -9,28 +9,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- NAV -->
+  <!-- ---------- NAV ---------- -->
   <header class="sticky-nav">
     <nav>
       <a href="#hero">Home</a>
       <a href="#work">Experience</a>
       <a href="#education">Education</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#reachout">Reach Out</a>
     </nav>
   </header>
 
-  <!-- HERO -->
+  <!-- ---------- HERO ---------- -->
   <section id="hero">
     <div class="hero-inner">
-      <img src="your-photo.jpg" alt="Avanti Chandratre" class="profile-pic">
+      <img src="profile.jpg" alt="Avanti Chandratre" class="profile-pic">
       <div class="hero-text">
         <h1>Avanti Chandratre</h1>
         <p class="tagline">Sr Data Analyst · ACAP certified · 3 yrs turning data into $$</p>
-        <p class="bio">
-          Hi, I'm Avanti — I build self-serve dashboards, automate ETL, and forecast growth for CPG & tech firms.
-          Currently wrapping up an MS in Business Analytics at Purdue while helping ValorTech scale mental-health access.
-        </p>
+        <div class="box">
+          <p>Hi, I'm Avanti — I build self-serve dashboards, automate ETL, and forecast growth for CPG & tech firms.</p>
+          <p>Currently wrapping up an MS in Business Analytics at Purdue while helping ValorTech scale mental-health access.</p>
+        </div>
         <div class="contact-bar">
           <a href="mailto:chandratreavanti@gmail.com">Email</a>
           <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn</a>
@@ -40,115 +40,102 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
+  <!-- ---------- EXPERIENCE ---------- -->
   <section id="work">
-  <h2>Professional Journey</h2>
-  <div class="timeline">
-    <!-- right card -->
-    <div class="timeline-item right">
-      <time>May 2025 – Aug 2025</time>
-      <h3>Business Strategy Analyst @ ValorTech</h3>
-      <p>Identified 15 high-opportunity counties via SDoH data → targeted launches. Built KPI dashboards 20 % faster.</p>
-      <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
+    <h2>Professional Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item box right">
+        <time>May 2025 – Aug 2025</time>
+        <h3>Business Strategy Analyst @ ValorTech</h3>
+        <p>Identified 15 high-opportunity counties via SDoH data → targeted launches. Built KPI dashboards 20 % faster.</p>
+        <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
+      </div>
+      <div class="timeline-item box left">
+        <time>Dec 2024 – Apr 2025</time>
+        <h3>Risk Evaluation Analyst @ Prediction Guard</h3>
+        <p>Quantified LLM safety risks across 5 categories; advised leadership on best-fit models.</p>
+        <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
+      </div>
+      <div class="timeline-item box right">
+        <time>Jul 2022 – Jul 2024</time>
+        <h3>Business Analyst @ Fractal Analytics</h3>
+        <p>Drove 19 % YoY revenue growth via KPI standardisation; saved 6 h/week through ETL automation.</p>
+        <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
+      </div>
+      <div class="timeline-item box left">
+        <time>May 2021 – Jul 2021</time>
+        <h3>Data Analyst Intern @ Fractal Analytics</h3>
+        <p>Boosted Azure pipeline test coverage 40 %; created metadata docs for governance.</p>
+        <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
+      </div>
     </div>
-    <!-- left card -->
-    <div class="timeline-item left">
-      <time>Dec 2024 – Apr 2025</time>
-      <h3>Risk Evaluation Analyst @ Prediction Guard</h3>
-      <p>Quantified LLM safety risks across 5 categories; advised leadership on best-fit models.</p>
-      <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
-    </div>
-    <!-- right card -->
-    <div class="timeline-item right">
-      <time>Jul 2022 – Jul 2024</time>
-      <h3>Business Analyst @ Fractal Analytics</h3>
-      <p>Drove 19 % YoY revenue growth via KPI standardisation; saved 6 h/week through ETL automation.</p>
-      <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
-    </div>
-    <!-- left card -->
-    <div class="timeline-item left">
-      <time>May 2021 – Jul 2021</time>
-      <h3>Data Analyst Intern @ Fractal Analytics</h3>
-      <p>Boosted Azure pipeline test coverage 40 %; created metadata docs for governance.</p>
-      <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
-    </div>
-  </div>
-</section>
+  </section>
 
-  <!-- EDUCATION -->
+  <!-- ---------- EDUCATION ---------- -->
   <section id="education">
     <h2>Education</h2>
     <div class="cards">
-      <div class="card">
+      <div class="card box">
         <strong>Purdue University</strong>
         <span>MS Business Analytics & Information Management — Aug 2025</span>
       </div>
-      <div class="card">
+      <div class="card box">
         <strong>NIT Warangal</strong>
         <span>BS Mechanical Engineering — May 2022</span>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS 3×2 -->
+  <!-- ---------- PROJECTS ---------- -->
   <section id="projects">
     <h2>Featured Projects</h2>
     <div class="project-grid">
-      <div class="tile">
+      <div class="tile box">
         <h4>HR Email Automation</h4>
         <p>LLM classifier + auto-responder</p>
         <a href="https://github.com/AvantiChandratre/hr-email-automation" target="_blank">GitHub</a>
       </div>
-      <div class="tile">
+      <div class="tile box">
         <h4>Airbnb Host Retention</h4>
         <p>Churn model that saved $6.3 M</p>
         <a href="https://github.com/AvantiChandratre/Customer-Relationship-Management-The-Case-of-Airbnb" target="_blank">GitHub</a>
       </div>
-      <div class="tile">
+      <div class="tile box">
         <h4>Cardio Risk Predictor</h4>
         <p>Spark MLlib RF → 95 % accuracy</p>
         <a href="https://github.com/AvantiChandratre/cardio-predictive-analytics" target="_blank">GitHub</a>
       </div>
-      <div class="tile">
+      <div class="tile box">
         <h4>Optimal Drugstore Location</h4>
         <p>Spatial SQL + weighted scoring</p>
         <a href="https://github.com/AvantiChandratre/optimal-drugstore-location-sql" target="_blank">GitHub</a>
       </div>
-      <div class="tile">
+      <div class="tile box">
         <h4>CCAC Snow-Route Optimisation</h4>
         <p>Network-flow + Graphviz visualiser</p>
         <a href="https://github.com/AvantiChandratre/CCAC_Old_Town_Road" target="_blank">GitHub</a>
       </div>
-      <!-- add sixth tile here if you want -->
+      <!-- add sixth tile here if needed -->
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Let’s Connect</h2>
-    <p>Ready to build data-driven impact together?</p>
-    <a href="mailto:chandratreavanti@gmail.com" class="cta">Send Email</a>
-    <div class="social-row">
-      <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn</a>
-      <a href="https://github.com/AvantiChandratre" target="_blank">GitHub</a>
+  <!-- ---------- REACH-OUT BOX ---------- -->
+  <section id="reachout">
+    <div class="box">
+      <h2>Let’s Build Something Together</h2>
+      <p>Drop me a message — I’d love to hear from you.</p>
+      <a href="mailto:chandratreavanti@gmail.com" class="cta">Reach Out To Me</a>
     </div>
   </section>
 
-<!-- REACH-OUT BOX -->
-<section id="reachout">
-  <h2>Let’s Build Something Together</h2>
-  <p>Drop me a message — I’d love to hear from you.</p>
-  <a href="mailto:chandratreavanti@gmail.com" class="cta">Reach Out To Me</a>
-</section>
-
-<script>
-const observer=new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting) entry.target.classList.add('show');
-  });
-},{threshold:.2});
-document.querySelectorAll('.timeline-item, .card, .tile').forEach(el=>observer.observe(el));
-</script>
-  
+  <!-- ---------- ANIMATE ON SCROLL ---------- -->
+  <script>
+    const observer=new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting) entry.target.classList.add('show');
+      });
+    },{threshold:.2});
+    document.querySelectorAll('.timeline-item, .card, .tile, .box').forEach(el=>observer.observe(el));
+  </script>
 </body>
 </html>
