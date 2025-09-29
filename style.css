@@ -110,3 +110,26 @@ nav a:hover{color:var(--accent);}
 #contact{text-align:center;padding:3rem 1rem;}
 .cta{display:inline-block;background:var(--accent);color:#fff;padding:.75rem 2rem;border-radius:var(--radius);margin:1rem 0;box-shadow:var(--shadow);}
 .social-row{display:flex;gap:1rem;justify-content:center;margin-top:1rem;}
+
+/* centred section titles */
+section > h2{
+  text-align:center;
+  margin:0 auto 2rem;
+  max-width:var(--max-width);
+}
+
+/* animate on scroll */
+.timeline-item,
+.card,
+.tile{
+  opacity:0;
+  transform:translateY(25px);
+  transition:opacity .6s ease, transform .6s ease;
+}
+/* when JS adds .show → fade up */
+.timeline-item.show,
+.card.show,
+.tile.show{
+  opacity:1;
+  transform:translateY(0);
+}
