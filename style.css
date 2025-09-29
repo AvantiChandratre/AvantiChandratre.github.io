@@ -1,15 +1,19 @@
 :root{
   --bg:#FAF4EB;               /* warm nude beige */
   --surface:#FFFFFF;          /* white cards */
-  --accent:#FF4D6D;           /* coral pop */
-  --text:#3C3C3C;
-  --muted:#7A7A7A;
+  --accent:#D96E26;           /* burnt-orange (was FF4D6D) */
+  --text:#5C4B37;             /* coffee-brown body text */
+  --heading:#8E5434;          /* dusty-terracotta headings */
+  --muted:#9A8470;            /* softer beige-grey */
   --shadow:0 6px 18px rgba(0,0,0,.08);
   --radius:12px;
   --max-width:1000px;
   --gap:2rem;
   font-family:'Inter',sans-serif;
 }
+
+h1,h2,h3{color:var(--heading);}
+
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--bg);color:var(--text);line-height:1.6;}
 h1,h2,h3{line-height:1.2;}
