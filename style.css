@@ -55,3 +55,44 @@ h1,h2,h3{color:var(--heading);}
 section>h2{text-align:center;margin:0 auto 2rem;max-width:var(--max-width);}
 .timeline-item,.card,.tile,.box{opacity:0;transform:translateY(25px);transition:opacity .6s ease,transform .6s ease;}
 .timeline-item.show,.card.show,.tile.show,.box.show{opacity:1;transform:translateY(0);}
+
+/* =====  MINI CERTIFICATION TILES  ===== */
+.cert-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);   /* 2-column desktop */
+  gap:1.5rem;
+  max-width:var(--max-width);
+  margin:auto;
+}
+.cert-card{
+  position:relative;
+  background:var(--surface);
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  transition:transform .3s ease;
+  text-decoration:none;
+}
+.cert-card:hover{transform:translateY(-4px);}
+.cert-card img{
+  width:100%;
+  height:120px;                 /* SMALLER than project cards */
+  object-fit:cover;
+  background:#fff;              /* kills transparency */
+}
+.cert-info{
+  padding:1rem 1.2rem;
+}
+.cert-info h3{
+  font-size:1rem;
+  margin:0 0 .2rem;
+  color:var(--heading);
+}
+.cert-info p{
+  margin:0;
+  font-size:.85rem;
+  color:var(--muted);
+}
+@media(max-width:600px){
+  .cert-grid{grid-template-columns:1fr;}   /* 1-column phone */
+}
