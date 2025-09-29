@@ -1,41 +1,21 @@
+/* =====  BEIGE on GREY  ===== */
 :root{
-  --bg:#F1F1F1;          /* soft grey background */
+  --bg:#F1F1F1;          /* soft grey canvas */
   --surface:#FAF4EB;     /* beige cards */
-  --accent:#D96E26;      /* burnt-orange accents */
-  --text:#5C4B37;        /* coffee-brown text */
-  --heading:#8E5434;     /* terracotta headings */
-  --muted:#9A8470;       /* beige-grey subtle text */
+  --accent:#D96E26;      /* burnt-orange pop */
+  --text:#5C4B37;
+  --heading:#8E5434;
+  --muted:#9A8470;
   --shadow:0 8px 20px rgba(0,0,0,.08);
   --radius:12px;
   --max-width:1000px;
   --gap:2rem;
   font-family:'Inter',sans-serif;
 }
-
-/* universal beige card */
-.box{
-  background:var(--surface);
-  border-radius:var(--radius);
-  padding:1.5rem 2rem;
-  margin:1.5rem auto;
-  max-width:var(--max-width);
-  box-shadow:var(--shadow);
-}
-
+.box{background:var(--surface);border-radius:var(--radius);padding:1.5rem 2rem;margin:1.5rem auto;max-width:var(--max-width);box-shadow:var(--shadow);}
 h1,h2,h3{color:var(--heading);}
-*{box-sizing:border-box;margin:0;padding:0;}
-body{background:var(--bg);color:var(--text);line-height:1.6;}
-h1,h2,h3{line-height:1.2;}
-a{color:var(--accent);text-decoration:none;}
-img{max-width:100%;display:block;}
 
-/* ---------- nav ---------- */
-.sticky-nav{position:sticky;top:0;z-index:10;background:#ffffffaa;backdrop-filter:blur(8px);}
-nav{display:flex;gap:var(--gap);padding:1rem var(--gap);max-width:var(--max-width);margin:auto;}
-nav a{color:var(--text);font-weight:500;transition:.2s;}
-nav a:hover{color:var(--accent);}
-
-/* ---------- hero – 70 % height split ---------- */
+/* ---------- 70 % hero split ---------- */
 .hero-split{display:flex;background:var(--bg);}
 .hero-left,.hero-right{flex:1;display:grid;place-items:center;padding:2rem;}
 .hero-photo{width:100%;height:70vh;object-fit:cover;border-radius:0;}
@@ -44,7 +24,7 @@ nav a:hover{color:var(--accent);}
   .hero-photo{height:70vh;}
 }
 
-/* ---------- alternating timeline ---------- */
+/* ---------- classic alternating timeline ---------- */
 .timeline{position:relative;padding:0;margin:2rem auto;max-width:var(--max-width);}
 .timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:3px;background:var(--accent);transform:translateX(-50%);}
 .timeline-item{position:relative;width:46%;padding:1rem 1.5rem;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:1.5rem;}
@@ -59,12 +39,7 @@ nav a:hover{color:var(--accent);}
   .timeline-item::after{left:-2.6rem !important;}
 }
 
-/* ---------- education ---------- */
-#education{padding:3rem 1rem;max-width:var(--max-width);margin:auto;}
-.cards{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
-.card{background:var(--surface);padding:1.5rem;border-radius:var(--radius);box-shadow:var(--shadow);}
-
-/* ---------- 2-column XL project grid ---------- */
+/* ---------- 2-column XL project cards ---------- */
 .proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2.5rem;max-width:var(--max-width);margin:auto;}
 .proj-card{position:relative;background:var(--surface);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);transition:transform .3s ease;}
 .proj-card:hover{transform:translateY(-6px);}
@@ -73,15 +48,10 @@ nav a:hover{color:var(--accent);}
 .proj-info h3{font-size:1.25rem;margin:0 0 .25rem;color:var(--heading);}
 .proj-info p{margin:0;color:var(--muted);font-size:.95rem;}
 .cover-link{position:absolute;inset:0;z-index:2;}
+.img-back{background:#fff;border-radius:12px 12px 0 0;}   /* kills transparency */
 @media(max-width:800px){.proj-grid{grid-template-columns:1fr;}}
 
-/* ---------- reach-out ---------- */
-#reachout{padding:3rem 1rem;text-align:center;}
-#reachout .box{margin:auto;}
-
-/* ---------- centre titles ---------- */
+/* ---------- centre titles + fade-up ---------- */
 section>h2{text-align:center;margin:0 auto 2rem;max-width:var(--max-width);}
-
-/* ---------- on-scroll fade-up ---------- */
 .timeline-item,.card,.tile,.box{opacity:0;transform:translateY(25px);transition:opacity .6s ease,transform .6s ease;}
 .timeline-item.show,.card.show,.tile.show,.box.show{opacity:1;transform:translateY(0);}
