@@ -85,3 +85,14 @@ section>h2{text-align:center;margin:0 auto 2rem;max-width:var(--max-width);}
 /* ---------- on-scroll fade-up ---------- */
 .timeline-item,.card,.tile,.box{opacity:0;transform:translateY(25px);transition:opacity .6s ease,transform .6s ease;}
 .timeline-item.show,.card.show,.tile.show,.box.show{opacity:1;transform:translateY(0);}
+
+/* ---- centre-align timeline cards ---- */
+.timeline-item{
+  width:70%;                 /* take most of the row */
+  margin:0 auto 1rem;        /* centre horizontally */
+  text-align:left;           /* uniform text alignment */
+}
+.timeline-item::after{       /* dot stays in the middle */
+  left:50%;
+  transform:translateX(-50%);
+}
