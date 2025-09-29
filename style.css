@@ -1,15 +1,27 @@
 :root{
-  --bg:#FAF4EB;               /* warm nude beige */
-  --surface:#FFFFFF;          /* white cards */
-  --accent:#D96E26;           /* burnt-orange (was FF4D6D) */
-  --text:#5C4B37;             /* coffee-brown body text */
-  --heading:#8E5434;          /* dusty-terracotta headings */
-  --muted:#9A8470;            /* softer beige-grey */
-  --shadow:0 6px 18px rgba(0,0,0,.08);
+  --bg:#F1F1F1;          /* soft grey background */
+  --surface:#FAF4EB;     /* beige cards */
+  --accent:#D96E26;      /* burnt-orange accents */
+  --text:#5C4B37;        /* coffee-brown text */
+  --heading:#8E5434;     /* terracotta headings */
+  --muted:#9A8470;       /* beige-grey subtle text */
+  --shadow:0 8px 20px rgba(0,0,0,.08);
   --radius:12px;
   --max-width:1000px;
   --gap:2rem;
+  /* ====== BEIGE-BOX / GREY-CANVAS SWAP ====== */
+
   font-family:'Inter',sans-serif;
+}
+
+/* every text block gets a beige card */
+.box{
+  background:var(--surface);
+  border-radius:12px;
+  padding:1.5rem 2rem;
+  margin:1.5rem auto;
+  max-width:var(--max-width);
+  box-shadow:var(--shadow);
 }
 
 h1,h2,h3{color:var(--heading);}
