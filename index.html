@@ -140,6 +140,15 @@
   <p>Drop me a message — I’d love to hear from you.</p>
   <a href="mailto:chandratreavanti@gmail.com" class="cta">Reach Out To Me</a>
 </section>
+
+<script>
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting) entry.target.classList.add('show');
+  });
+},{threshold:.2});
+document.querySelectorAll('.timeline-item, .card, .tile').forEach(el=>observer.observe(el));
+</script>
   
 </body>
 </html>
