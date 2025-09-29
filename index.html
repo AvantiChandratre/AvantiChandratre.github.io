@@ -1,221 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avanti Chandratre</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avanti Chandratre | Data Analyst</title>
+  <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- ① Sticky Nav -->
   <header class="sticky-nav">
     <nav>
       <a href="#hero">Home</a>
       <a href="#work">Experience</a>
       <a href="#education">Education</a>
       <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <!-- ② Hero / Intro -->
   <section id="hero">
-    <div class="left">
-      <img src="your-photo.jpg" alt="Avanti Chandratre" class="profile-pic" />
-      <h1>Avanti Chandratre</h1>
-      <p>Business Analyst | Fractal Analytics</p>
-    </div>
-    <div class="right">
-      <p>
-        Hi, I'm Avanti Chandratre — a data enthusiast with a passion for transforming raw data into meaningful insights that drive real-world impact.
-      </p>
-      <p>
-        Currently pursuing my Master’s in Business Analytics at Purdue University, I bring 2+ years of experience as a Data Analyst, where I’ve built end-to-end BI solutions, optimized data pipelines, and collaborated cross-functionally to solve business problems. From building LLM-powered systems to leading dashboard development across global markets, I thrive at the intersection of data, strategy, and innovation.
-      </p>
-      <p>
-        This GitHub is a space where I share what I’m building, learning, and exploring — from machine learning models to data storytelling. Whether it’s a weekend experiment or a production-ready project, each repository reflects my curiosity and commitment to using data for smarter decisions.
-      </p>
-      <p>
-        Let’s connect, collaborate, and build something impactful together!
-      </p>
-    </div>
-  </section>
-
-  <section id="work">
-    <h2 style="margin-bottom: 60px;">Work Experience</h2>
-    <div class="timeline horizontal">
-      <div class="experience reveal" data-date="May 2021 – Jul 2021">
-  <h3>Fractal Analytics — Data Analyst Intern</h3>
-  <p>Remote</p>
-  <button onclick="toggleDropdown(this)">Details</button>
-  <div class="dropdown-content">
-    <ul>
-      <li>Enhanced neural networks for COVID-19 forecasting (FAIGHTERS).</li>
-      <li>Improved code quality and testing practices with CC Hellenic.</li>
-    </ul>
-  </div>
-</div>
-
-<div class="experience reveal" data-date="Jul 2022 – Jul 2024">
-  <h3>Fractal Analytics — Imagineer / Associate BA</h3>
-  <p>Mumbai, India</p>
-  <button onclick="toggleDropdown(this)">Details</button>
-  <div class="dropdown-content">
-    <ul>
-      <li>Led 5 dashboards, generating $50K in additional revenue.</li>
-      <li>Optimized KPIs across 8 markets, boosting revenue 19%.</li>
-      <li>Reduced dashboard load time by 30% using DAX & SQL tuning.</li>
-    </ul>
-  </div>
-</div>
-
-<div class="experience reveal" data-date="Dec 2024 – Apr 2025">
-  <h3>Prediction Guard — Data Science Intern</h3>
-  <p>Remote | West Lafayette, IN</p>
-  <button onclick="toggleDropdown(this)">Details</button>
-  <div class="dropdown-content">
-    <ul>
-      <li>Benchmarked LLM risks: prompt injection, PII, toxicity.</li>
-      <li>Developed data curation + evaluation pipelines for safety.</li>
-    </ul>
-  </div>
-</div>
-
-<div class="experience reveal" data-date="May 2025 – Aug 2025">
-  <h3>Valtech (Incoming)</h3>
-  <p>Market research + platform development</p>
-  <button onclick="toggleDropdown(this)">Details</button>
-  <div class="dropdown-content">
-    <ul>
-      <li>Strategic internship to scale a mental health resource platform.</li>
-    </ul>
-  </div>
-</div>
-    </div>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <div class="education-list">
-      <div class="education-card">
-        <strong>Purdue University, Daniels School of Business</strong>
-        <p>West Lafayette, IN</p>
-        <p>Master of Science in Business Analytics and Information Management – August 2025</p>
-      </div>
-      <div class="education-card">
-        <strong>National Institute of Technology Warangal</strong>
-        <p>Warangal, Telangana, India</p>
-        <p>Bachelors in Mechanical Engineering – May 2022</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-  <h3>HR Email Automation</h3>
-  <button onclick="toggleDropdown(this)">Details</button>
-  <div class="dropdown-content">
-    <ul>
-      <li>Built an end-to-end system to classify and auto-respond to HR emails using LLMs</li>
-      <li>Integrated semantic similarity, zero-shot classification, and a dynamic retraining loop</li>
-      <li><a href="https://github.com/AvantiChandratre/hr-email-automation" target="_blank">View GitHub</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="project-card">
-  <h3>CCAC Old Town Road Optimization</h3>
-  <button onclick="toggleDropdown(this)">Details</button>
-  <div class="dropdown-content">
-    <ul>
-      <li>Optimized snow route clearing using network flow and shortest path algorithms</li>
-      <li>Utilized real spatial data and visualized routes using Graphviz in Python</li>
-      <li><a href="https://github.com/AvantiChandratre/CCAC_Old_Town_Road" target="_blank">View GitHub</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="project-card">
-  <h3>CRM Optimization – Airbnb Case</h3>
-  <button onclick="toggleDropdown(this)">Details</button>
-  <div class="dropdown-content">
-    <ul>
-      <li>Won 1st place for clustering hosts and modeling retention with uplift strategies</li>
-      <li>Proposed a personalized gift recommendation engine for host engagement</li>
-      <li><a href="https://github.com/AvantiChandratre/Customer-Relationship-Management-The-Case-of-Airbnb" target="_blank">View GitHub</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="project-card">
-  <h3>Cardio Risk Predictor</h3>
-  <button onclick="toggleDropdown(this)">Details</button>
-  <div class="dropdown-content">
-    <ul>
-      <li>Trained a Spark MLlib Random Forest model with 95%+ validation accuracy</li>
-      <li>Enabled early intervention workflows and dashboarded results in Power BI</li>
-      <li><a href="https://github.com/AvantiChandratre/cardio-predictive-analytics" target="_blank">View GitHub</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="project-card">
-  <h3>Optimal Drugstore Location</h3>
-  <button onclick="toggleDropdown(this)">Details</button>
-  <div class="dropdown-content">
-    <ul>
-      <li>Wrote complex SQL spatial queries to recommend locations for new pharmacies</li>
-      <li>Balanced competition, accessibility, and demographics using weighted scoring</li>
-      <li><a href="https://github.com/AvantiChandratre/optimal-drugstore-location-sql" target="_blank">View GitHub</a></li>
-    </ul>
-  </div>
-</div>
-    </div>
-  </section>
-
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <div class="cert-list">
-      <div class="cert">
-        <h4>Alteryx Designer Core</h4>
-        <button onclick="toggleDropdown(this)">Details</button>
-        <div class="dropdown-content">
-          <p>Certification overview and link to verification page.</p>
-          <a href="#">View</a>
+    <div class="hero-inner">
+      <img src="your-photo.jpg" alt="Avanti Chandratre" class="profile-pic">
+      <div class="hero-text">
+        <h1>Avanti Chandratre</h1>
+        <p class="tagline">Sr Data Analyst · ACAP certified · 3 yrs turning data into $$</p>
+        <p class="bio">
+          Hi, I'm Avanti — I build self-serve dashboards, automate ETL, and forecast growth for CPG & tech firms.  
+          Currently wrapping up an MS in Business Analytics at Purdue while helping ValorTech scale mental-health access.
+        </p>
+        <div class="contact-bar">
+          <a href="mailto:chandratreavanti@gmail.com">Email</a>
+          <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn</a>
+          <a href="https://github.com/AvantiChandratre" target="_blank">GitHub</a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ③ Experience Timeline -->
+  <section id="work">
+    <h2>Professional Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <time>May 2025 – Aug 2025</time>
+        <h3>Business Strategy Analyst @ ValorTech</h3>
+        <p>Identified 15 high-opportunity counties via SDoH data → targeted launches. Built KPI dashboards 20 % faster.</p>
+      </div>
+      <div class="timeline-item">
+        <time>Dec 2024 – Apr 2025</time>
+        <h3>Risk Evaluation Analyst @ Prediction Guard</h3>
+        <p>Quantified LLM safety risks across 5 categories; advised leadership on best-fit models.</p>
+      </div>
+      <div class="timeline-item">
+        <time>Jul 2022 – Jul 2024</time>
+        <h3>Business Analyst @ Fractal Analytics</h3>
+        <p>Drove 19 % YoY revenue growth via KPI standardisation; saved 6 h/week through ETL automation.</p>
+      </div>
+      <div class="timeline-item">
+        <time>May 2021 – Jul 2021</time>
+        <h3>Data Analyst Intern @ Fractal Analytics</h3>
+        <p>Boosted Azure pipeline test coverage 40 %; created metadata docs for governance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ④ Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="cards">
+      <div class="card">
+        <strong>Purdue University</strong>
+        <span>MS Business Analytics & Information Management — Aug 2025</span>
+      </div>
+      <div class="card">
+        <strong>NIT Warangal</strong>
+        <span>BS Mechanical Engineering — May 2022</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑤ Projects (4 at a time) -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-slider">
+      <button class="arrow left" aria-label="Previous">&larr;</button>
+      <div class="project-window">
+        <div class="project-track">
+          <!-- slide 1 -->
+          <div class="project-group">
+            <div class="tile">
+              <h4>HR Email Automation</h4>
+              <p>LLM-powered classifier + auto-responder</p>
+              <a href="https://github.com/AvantiChandratre/hr-email-automation" target="_blank">GitHub</a>
+            </div>
+            <div class="tile">
+              <h4>Airbnb Host Retention</h4>
+              <p>Churn model that saved $6.3 M bookings</p>
+              <a href="https://github.com/AvantiChandratre/Customer-Relationship-Management-The-Case-of-Airbnb" target="_blank">GitHub</a>
+            </div>
+            <div class="tile">
+              <h4>Cardio Risk Predictor</h4>
+              <p>Spark MLlib RF → 95 % accuracy</p>
+              <a href="https://github.com/AvantiChandratre/cardio-predictive-analytics" target="_blank">GitHub</a>
+            </div>
+            <div class="tile">
+              <h4>Optimal Drugstore Location</h4>
+              <p>Spatial SQL + weighted scoring</p>
+              <a href="https://github.com/AvantiChandratre/optimal-drugstore-location-sql" target="_blank">GitHub</a>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div class="project-group">
+            <div class="tile">
+              <h4>CCAC Snow-Route Optimisation</h4>
+              <p>Network-flow + Graphviz visualiser</p>
+              <a href="https://github.com/AvantiChandratre/CCAC_Old_Town_Road" target="_blank">GitHub</a>
+            </div>
+            <!-- duplicate if you need more -->
+          </div>
+        </div>
+      </div>
+      <button class="arrow right" aria-label="Next">&rarr;</button>
+    </div>
+  </section>
+
+  <!-- ⑥ Contact -->
+  <section id="contact">
+    <h2>Let’s Connect</h2>
+    <p>Ready to build data-driven impact together?</p>
+    <a href="mailto:chandratreavanti@gmail.com" class="cta">Send Email</a>
+    <div class="social-row">
+      <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn</a>
+      <a href="https://github.com/AvantiChandratre" target="_blank">GitHub</a>
+    </div>
+  </section>
+
   <script>
-    function toggleDropdown(button) {
-      document.querySelectorAll('.dropdown-content').forEach((content) => {
-        if (content !== button.nextElementSibling) {
-          content.style.display = 'none';
-          content.parentElement.classList.remove('active-card');
-        }
-      });
-      const content = button.nextElementSibling;
-      const isOpen = content.style.display === 'block';
-      content.style.display = isOpen ? 'none' : 'block';
-      button.parentElement.classList.toggle('active-card', !isOpen);
-    }
+    /* project slider */
+    const track = document.querySelector('.project-track');
+    const left  = document.querySelector('.arrow.left');
+    const right = document.querySelector('.arrow.right');
+    let index = 0;
+    function goTo(i){ track.style.transform = `translateX(-${i*100}%)`; }
+    right.addEventListener('click',()=>{ index=(index+1)%2; goTo(index); });
+    left.addEventListener('click', ()=>{ index=(index-1+2)%2; goTo(index); });
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal');
-          observer.unobserve(entry.target);
-        }
+    /* smooth scroll for nav */
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
       });
-    }, {
-      threshold: 0.1
-    });
-
-    document.querySelectorAll('.experience').forEach((el) => {
-      observer.observe(el);
     });
   </script>
 </body>
