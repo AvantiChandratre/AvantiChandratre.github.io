@@ -94,3 +94,35 @@ nav a:hover{color:var(--accent);}
 section>h2{text-align:center;margin:0 auto 2rem;max-width:var(--max-width);}
 .timeline-item,.card,.box,.proj-card,.cert-card{opacity:0;transform:translateY(25px);transition:opacity .6s ease,transform .6s ease;}
 .timeline-item.show,.card.show,.box.show,.proj-card.show,.cert-card.show{opacity:1;transform:translateY(0);}
+
+/* =====  COLOUR RESET – COSMIC DARK  ===== */
+body,
+p,
+span,
+time,
+h1,h2,h3,
+nav a,
+.proj-info p,
+.cert-info p,
+.timeline-item p,
+.card span,
+.box p{
+  color:var(--text);        /* light grey (#E6E6E6) */
+}
+h1,h2,h3,
+.proj-info h3,
+.cert-info h3,
+.timeline-item h3,
+.card strong{
+  color:var(--heading);     /* lavender (#B97CF9) */
+}
+a,
+.timeline-item a,
+.contact-bar a{
+  color:var(--accent);      /* violet (#BB5FFF) */
+}
+.muted,
+.proj-info p,
+.cert-info p{
+  color:var(--muted);       /* mid-grey (#A0A0A0) */
+}
