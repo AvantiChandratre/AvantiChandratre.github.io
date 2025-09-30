@@ -5,19 +5,23 @@
   --heading:#B97CF9;     /* soft lavender-purple emphasis */
   --text:#E6E6E6;        /* light grey readability */
   --muted:#A0A0A0;       /* mid-grey subtitles */
-  --shadow:0 4px 20px rgba(0,0,0,.5);   /* subtle dark lift */
+  --shadow:0 4px 20px rgba(0,0,0,.5);
   --radius:16px;
   --max-width:1100px;
   --gap:3rem;
   font-family:'Inter',sans-serif;
 }
 
-/* ---------- base ---------- */
-*{box-sizing:border-box;margin:0;padding:0;}
-body{background:var(--bg);color:var(--text);line-height:1.6;}
-h1,h2,h3{line-height:1.2;color:var(--heading);}
-a{color:var(--accent);text-decoration:none;}
-img{max-width:100%;display:block;}
+/* ---------- wallpaper background (fixed) ---------- */
+.bg-wallpaper{
+  position:fixed;
+  top:0;left:0;width:100%;height:100%;
+  background:url('wallpaper.jpg') center/cover no-repeat;
+  z-index:-1;             /* sits behind everything */
+}
+
+/* ---------- content scrolls over wallpaper ---------- */
+.content-overlay{position:relative;z-index:1;}
 
 /* ---------- glass nav (dark mode) ---------- */
 .sticky-nav{position:sticky;top:0;z-index:10;background:rgba(22,20,31,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08);}
@@ -26,7 +30,7 @@ nav a{color:var(--text);font-weight:500;transition:.2s;}
 nav a:hover{color:var(--accent);}
 
 /* ---------- hero – 50 % split ---------- */
-.hero-split{display:flex;background:var(--bg);}
+.hero-split{display:flex;background:transparent;}   /* transparent = wallpaper shows */
 .hero-left,.hero-right{flex:1;display:grid;place-items:center;padding:2rem;}
 .hero-photo{width:100%;height:50vh;object-fit:cover;border-radius:0;}
 @media(max-width:900px){
