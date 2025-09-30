@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- ---------- NAV ---------- -->
+  <!-- ---------- GLASS NAV ---------- -->
   <header class="sticky-nav">
     <nav>
       <a href="#hero">Home</a>
@@ -21,8 +21,8 @@
     </nav>
   </header>
 
-  <!-- ---------- HERO – 50 % SPLIT ---------- -->
-  <section id="hero" class="hero-split">
+  <!-- ---------- HERO – PREMIUM SPLIT ---------- -->
+  <section id="hero" class="hero-split airy">
     <div class="hero-left">
       <img src="profile.jpg" alt="Avanti Chandratre" class="hero-photo">
     </div>
@@ -41,8 +41,8 @@
     </div>
   </section>
 
-  <!-- ---------- EXPERIENCE – ALTERNATING TIMELINE ---------- -->
-  <section id="work">
+  <!-- ---------- EXPERIENCE – AIRY ALTERNATING ---------- -->
+  <section id="work" class="airy">
     <h2>Professional Journey</h2>
     <div class="timeline">
       <div class="timeline-item right">
@@ -76,7 +76,7 @@
   </section>
 
   <!-- ---------- EDUCATION ---------- -->
-  <section id="education">
+  <section id="education" class="airy">
     <h2>Education</h2>
     <div class="cards">
       <div class="card box">
@@ -90,8 +90,8 @@
     </div>
   </section>
 
-  <!-- ---------- PROJECTS – 4 SMALL TILES / SCROLL ---------- -->
-  <section id="projects">
+  <!-- ---------- PROJECTS – 4 SMALL / SCROLL ---------- -->
+  <section id="projects" class="airy">
     <h2>Featured Projects</h2>
     <div class="proj-grid">
       <div class="proj-card">
@@ -114,7 +114,7 @@
 
       <div class="proj-card">
         <a class="cover-link" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Cardio Risk Predictor"></a>
-        <div class="img-back"><img src="cardio.jpg" alt="Cardio Risk Predictor"></div>
+        <div class="img-back"><img src="cardiojpg" alt="Cardio Risk Predictor"></div>
         <div class="proj-info">
           <h3>Cardio Risk Predictor</h3>
           <p>Spark MLlib RF → 95 % accuracy</p>
@@ -133,7 +133,7 @@
   </section>
 
   <!-- ---------- CERTIFICATIONS – MINI TILES ---------- -->
-  <section id="certs">
+  <section id="certs" class="airy">
     <h2>Licenses & Certifications</h2>
     <div class="cert-grid">
       <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="dbt Fundamentals">
@@ -145,7 +145,7 @@
       </a>
 
       <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="aCAP">
-        <img src="acap.jpg" alt="aCAP">
+        <img src="acapjpg" alt="aCAP">
         <div class="cert-info">
           <h3>Academic Pathway aCAP</h3>
           <p>INFORMS · Aug 2025</p>
@@ -179,7 +179,7 @@
   </section>
 
   <!-- ---------- REACH-OUT – CLEAN ---------- -->
-  <section id="reachout">
+  <section id="reachout" class="airy">
     <div class="box">
       <h2>Let’s Build Something Together</h2>
       <a href="mailto:chandratreavanti@gmail.com" class="cta">Reach Out To Me</a>
@@ -191,7 +191,7 @@
     const observer=new IntersectionObserver((entries)=>{
       entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('show');});
     },{threshold:.2});
-    document.querySelectorAll('.timeline-item, .card, .tile, .box, .proj-card, .cert-card').forEach(el=>observer.observe(el));
+    document.querySelectorAll('.timeline-item, .card, .box, .proj-card, .cert-card').forEach(el=>observer.observe(el));
   </script>
 </body>
 </html>
