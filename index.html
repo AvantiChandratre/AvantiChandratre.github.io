@@ -9,182 +9,188 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- ---------- GLASS NAV ---------- -->
-  <header class="sticky-nav">
-    <nav>
-      <a href="#hero">Home</a>
-      <a href="#work">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#certs">Certifications</a>
-      <a href="#reachout">Reach Out</a>
-    </nav>
-  </header>
+  <!-- 1.  wallpaper background  -->
+  <div class="bg-wallpaper"></div>
 
-  <!-- ---------- HERO – PREMIUM SPLIT ---------- -->
-  <section id="hero" class="hero-split airy">
-    <div class="hero-left">
-      <img src="profile.jpg" alt="Avanti Chandratre" class="hero-photo">
-    </div>
-    <div class="hero-right">
+  <!-- 2.  everything scrolls over it  -->
+  <div class="content-overlay">
+    <!-- ---------- GLASS NAV ---------- -->
+    <header class="sticky-nav">
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#work">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#certs">Certifications</a>
+        <a href="#reachout">Reach Out</a>
+      </nav>
+    </header>
+
+    <!-- ---------- HERO – 50 % SPLIT ---------- -->
+    <section id="hero" class="hero-split airy">
+      <div class="hero-left">
+        <img src="profile.jpg" alt="Avanti Chandratre" class="hero-photo">
+      </div>
+      <div class="hero-right">
+        <div class="box">
+          <h1>Avanti Chandratre</h1>
+          <p class="tagline">Sr Data Analyst · ACAP certified · 3 yrs turning data into $$</p>
+          <p>Hi, I'm Avanti — I build self-serve dashboards, automate ETL, and forecast growth for CPG & tech firms.</p>
+          <p>Currently wrapping up an MS in Business Analytics at Purdue while helping ValorTech scale mental-health access.</p>
+          <div class="contact-bar">
+            <a href="mailto:chandratreavanti@gmail.com">Email</a>
+            <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn</a>
+            <a href="https://github.com/AvantiChandratre" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- EXPERIENCE – ALTERNATING TIMELINE ---------- -->
+    <section id="work" class="airy">
+      <h2>Professional Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item right">
+          <time>May 2025 – Aug 2025</time>
+          <h3>Business Strategy Analyst @ ValorTech</h3>
+          <p>Identified 15 high-opportunity counties via SDoH data → targeted launches. Built KPI dashboards 20 % faster.</p>
+          <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
+        </div>
+
+        <div class="timeline-item left">
+          <time>Dec 2024 – Apr 2025</time>
+          <h3>Risk Evaluation Analyst @ Prediction Guard</h3>
+          <p>Quantified LLM safety risks across 5 categories; advised leadership on best-fit models.</p>
+          <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
+        </div>
+
+        <div class="timeline-item right">
+          <time>Jul 2022 – Jul 2024</time>
+          <h3>Business Analyst @ Fractal Analytics</h3>
+          <p>Drove 19 % YoY revenue growth via KPI standardisation; saved 6 h/week through ETL automation.</p>
+          <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
+        </div>
+
+        <div class="timeline-item left">
+          <time>May 2021 – Jul 2021</time>
+          <h3>Data Analyst Intern @ Fractal Analytics</h3>
+          <p>Boosted Azure pipeline test coverage 40 %; created metadata docs for governance.</p>
+          <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- EDUCATION ---------- -->
+    <section id="education" class="airy">
+      <h2>Education</h2>
+      <div class="cards">
+        <div class="card box">
+          <strong>Purdue University</strong>
+          <span>MS Business Analytics & Information Management — Aug 2025</span>
+        </div>
+        <div class="card box">
+          <strong>NIT Warangal</strong>
+          <span>BS Mechanical Engineering — May 2022</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- PROJECTS – 4 SMALL / SCROLL ---------- -->
+    <section id="projects" class="airy">
+      <h2>Featured Projects</h2>
+      <div class="proj-grid">
+        <div class="proj-card">
+          <a class="cover-link" href="https://linkedin.com/in/avantic" target="_blank" aria-label="HR Email Automation"></a>
+          <div class="img-back"><img src="hremail.jpg" alt="HR Email Automation"></div>
+          <div class="proj-info">
+            <h3>HR Email Automation</h3>
+            <p>LLM classifier + auto-responder</p>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <a class="cover-link" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Airbnb Host Retention"></a>
+          <div class="img-back"><img src="airbnb.png" alt="Airbnb Host Retention"></div>
+          <div class="proj-info">
+            <h3>Airbnb Host Retention</h3>
+            <p>Churn model that saved $6.3 M</p>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <a class="cover-link" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Cardio Risk Predictor"></a>
+          <div class="img-back"><img src="cardiojpg" alt="Cardio Risk Predictor"></div>
+          <div class="proj-info">
+            <h3>Cardio Risk Predictor</h3>
+            <p>Spark MLlib RF → 95 % accuracy</p>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <a class="cover-link" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Optimal Drugstore Location"></a>
+          <div class="img-back"><img src="proj4.jpg" alt="Optimal Drugstore Location"></div>
+          <div class="proj-info">
+            <h3>Optimal Drugstore Location</h3>
+            <p>Spatial SQL + weighted scoring</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- CERTIFICATIONS – MINI TILES ---------- -->
+    <section id="certs" class="airy">
+      <h2>Licenses & Certifications</h2>
+      <div class="cert-grid">
+        <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="dbt Fundamentals">
+          <img src="dbt.png" alt="dbt Fundamentals">
+          <div class="cert-info">
+            <h3>dbt Fundamentals</h3>
+            <p>dbt Labs · Sep 2025</p>
+          </div>
+        </a>
+
+        <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="aCAP">
+          <img src="acapjpg" alt="aCAP">
+          <div class="cert-info">
+            <h3>Academic Pathway aCAP</h3>
+            <p>INFORMS · Aug 2025</p>
+          </div>
+        </a>
+
+        <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Tableau Desktop Specialist">
+          <img src="tableau.png" alt="Tableau Desktop Specialist">
+          <div class="cert-info">
+            <h3>Tableau Desktop Specialist</h3>
+            <p>Tableau · Jun 2025</p>
+          </div>
+        </a>
+
+        <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Alteryx Designer Core">
+          <img src="alteryx.png" alt="Alteryx Designer Core">
+          <div class="cert-info">
+            <h3>Alteryx Designer Core</h3>
+            <p>Alteryx · May 2025</p>
+          </div>
+        </a>
+
+        <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Azure AI Fundamentals">
+          <img src="azure.png" alt="Azure AI Fundamentals">
+          <div class="cert-info">
+            <h3>Azure AI Fundamentals</h3>
+            <p>Microsoft · Oct 2024</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ---------- REACH-OUT – CLEAN ---------- -->
+    <section id="reachout" class="airy">
       <div class="box">
-        <h1>Avanti Chandratre</h1>
-        <p class="tagline">Sr Data Analyst · ACAP certified · 3 yrs turning data into $$</p>
-        <p>Hi, I'm Avanti — I build self-serve dashboards, automate ETL, and forecast growth for CPG & tech firms.</p>
-        <p>Currently wrapping up an MS in Business Analytics at Purdue while helping ValorTech scale mental-health access.</p>
-        <div class="contact-bar">
-          <a href="mailto:chandratreavanti@gmail.com">Email</a>
-          <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn</a>
-          <a href="https://github.com/AvantiChandratre" target="_blank">GitHub</a>
-        </div>
+        <h2>Let’s Build Something Together</h2>
+        <a href="mailto:chandratreavanti@gmail.com" class="cta">Reach Out To Me</a>
       </div>
-    </div>
-  </section>
-
-  <!-- ---------- EXPERIENCE – AIRY ALTERNATING ---------- -->
-  <section id="work" class="airy">
-    <h2>Professional Journey</h2>
-    <div class="timeline">
-      <div class="timeline-item right">
-        <time>May 2025 – Aug 2025</time>
-        <h3>Business Strategy Analyst @ ValorTech</h3>
-        <p>Identified 15 high-opportunity counties via SDoH data → targeted launches. Built KPI dashboards 20 % faster.</p>
-        <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
-      </div>
-
-      <div class="timeline-item left">
-        <time>Dec 2024 – Apr 2025</time>
-        <h3>Risk Evaluation Analyst @ Prediction Guard</h3>
-        <p>Quantified LLM safety risks across 5 categories; advised leadership on best-fit models.</p>
-        <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
-      </div>
-
-      <div class="timeline-item right">
-        <time>Jul 2022 – Jul 2024</time>
-        <h3>Business Analyst @ Fractal Analytics</h3>
-        <p>Drove 19 % YoY revenue growth via KPI standardisation; saved 6 h/week through ETL automation.</p>
-        <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
-      </div>
-
-      <div class="timeline-item left">
-        <time>May 2021 – Jul 2021</time>
-        <h3>Data Analyst Intern @ Fractal Analytics</h3>
-        <p>Boosted Azure pipeline test coverage 40 %; created metadata docs for governance.</p>
-        <a href="https://linkedin.com/in/avantic" target="_blank">LinkedIn &rarr;</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ---------- EDUCATION ---------- -->
-  <section id="education" class="airy">
-    <h2>Education</h2>
-    <div class="cards">
-      <div class="card box">
-        <strong>Purdue University</strong>
-        <span>MS Business Analytics & Information Management — Aug 2025</span>
-      </div>
-      <div class="card box">
-        <strong>NIT Warangal</strong>
-        <span>BS Mechanical Engineering — May 2022</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ---------- PROJECTS – 4 SMALL / SCROLL ---------- -->
-  <section id="projects" class="airy">
-    <h2>Featured Projects</h2>
-    <div class="proj-grid">
-      <div class="proj-card">
-        <a class="cover-link" href="https://linkedin.com/in/avantic" target="_blank" aria-label="HR Email Automation"></a>
-        <div class="img-back"><img src="hremail.jpg" alt="HR Email Automation"></div>
-        <div class="proj-info">
-          <h3>HR Email Automation</h3>
-          <p>LLM classifier + auto-responder</p>
-        </div>
-      </div>
-
-      <div class="proj-card">
-        <a class="cover-link" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Airbnb Host Retention"></a>
-        <div class="img-back"><img src="airbnb.png" alt="Airbnb Host Retention"></div>
-        <div class="proj-info">
-          <h3>Airbnb Host Retention</h3>
-          <p>Churn model that saved $6.3 M</p>
-        </div>
-      </div>
-
-      <div class="proj-card">
-        <a class="cover-link" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Cardio Risk Predictor"></a>
-        <div class="img-back"><img src="cardiojpg" alt="Cardio Risk Predictor"></div>
-        <div class="proj-info">
-          <h3>Cardio Risk Predictor</h3>
-          <p>Spark MLlib RF → 95 % accuracy</p>
-        </div>
-      </div>
-
-      <div class="proj-card">
-        <a class="cover-link" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Optimal Drugstore Location"></a>
-        <div class="img-back"><img src="proj4.jpg" alt="Optimal Drugstore Location"></div>
-        <div class="proj-info">
-          <h3>Optimal Drugstore Location</h3>
-          <p>Spatial SQL + weighted scoring</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ---------- CERTIFICATIONS – MINI TILES ---------- -->
-  <section id="certs" class="airy">
-    <h2>Licenses & Certifications</h2>
-    <div class="cert-grid">
-      <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="dbt Fundamentals">
-        <img src="dbt.png" alt="dbt Fundamentals">
-        <div class="cert-info">
-          <h3>dbt Fundamentals</h3>
-          <p>dbt Labs · Sep 2025</p>
-        </div>
-      </a>
-
-      <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="aCAP">
-        <img src="acapjpg" alt="aCAP">
-        <div class="cert-info">
-          <h3>Academic Pathway aCAP</h3>
-          <p>INFORMS · Aug 2025</p>
-        </div>
-      </a>
-
-      <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Tableau Desktop Specialist">
-        <img src="tableau.png" alt="Tableau Desktop Specialist">
-        <div class="cert-info">
-          <h3>Tableau Desktop Specialist</h3>
-          <p>Tableau · Jun 2025</p>
-        </div>
-      </a>
-
-      <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Alteryx Designer Core">
-        <img src="alteryx.png" alt="Alteryx Designer Core">
-        <div class="cert-info">
-          <h3>Alteryx Designer Core</h3>
-          <p>Alteryx · May 2025</p>
-        </div>
-      </a>
-
-      <a class="cert-card" href="https://linkedin.com/in/avantic" target="_blank" aria-label="Azure AI Fundamentals">
-        <img src="azure.png" alt="Azure AI Fundamentals">
-        <div class="cert-info">
-          <h3>Azure AI Fundamentals</h3>
-          <p>Microsoft · Oct 2024</p>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- ---------- REACH-OUT – CLEAN ---------- -->
-  <section id="reachout" class="airy">
-    <div class="box">
-      <h2>Let’s Build Something Together</h2>
-      <a href="mailto:chandratreavanti@gmail.com" class="cta">Reach Out To Me</a>
-    </div>
-  </section>
+    </section>
+  </div>   <!-- /content-overlay -->
 
   <!-- ---------- on-scroll fade ---------- -->
   <script>
