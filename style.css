@@ -1,11 +1,11 @@
 :root{
-  --bg:#F8F7F4;          /* warm off-white canvas */
-  --surface:#FFFFFF;     /* pure white cards */
-  --accent:#B98B59;      /* muted gold */
-  --text:#3E3E3E;        /* soft charcoal */
-  --heading:#1A1A1A;     /* almost-black */
-  --muted:#8C8C8C;       /* stone grey */
-  --shadow:0 4px 20px rgba(0,0,0,.06);
+  --bg:#121212;          /* charcoal canvas */
+  --surface:#F5F5F5;     /* off-white cards */
+  --accent:#D4AF37;      /* soft gold */
+  --text:#E0E0E0;        /* light grey text */
+  --heading:#FFFFFF;     /* pure white titles */
+  --muted:#A0A0A0;       /* stone grey subtitles */
+  --shadow:0 4px 20px rgba(0,0,0,.35);
   --radius:16px;
   --max-width:1100px;
   --gap:3rem;
