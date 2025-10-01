@@ -42,7 +42,7 @@ nav a:hover{color:var(--accent);}
 .timeline-item.right::before{left:-2.8rem;}
 .timeline-item:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.6);}
 .timeline-item time{font-size:.85rem;color:var(--muted);}
-.timeline-item .company{font-size:1rem;font-weight:700;color:#5B9BD5;margin:0;}
+.timeline-item .company{font-size:1rem;font-weight:700;color:var(--heading);margin:0;}
 .timeline-item .designation{font-size:.9rem;font-style:italic;color:var(--text);margin:0;}
 .timeline-item .date{font-size:.85rem;color:var(--muted);margin-left:.4rem;}
 .timeline-item p{margin:.25rem 0 0;}
@@ -89,37 +89,3 @@ section>h2{text-align:center;margin:0 auto 2rem;max-width:var(--max-width);}
 
 a.glow{transition:color .2s, text-shadow .2s;}
 a.glow:hover{color:var(--accent);text-shadow:0 0 8px var(--accent);}
-
-/* =====  COLOUR RESET – COSMIC DARK  ===== */
-body,
-p,
-span,
-time,
-h1,h2,h3,
-nav a,
-.proj-info p,
-.cert-info p,
-.timeline-item p,
-.card span,
-.box p{
-  color:var(--text);        /* light grey (#E6E6E6) */
-}
-h1,h2,h3,
-.proj-info h3,
-.cert-info h3,
-.timeline-item h3,
-.card strong,
-.edu-name{
-  color:var(--heading);     /* lavender (#B97CF9) */
-}
-a,
-.timeline-item a,
-.contact-bar a{
-  color:var(--accent);      /* violet (#BB5FFF) */
-}
-.muted,
-.proj-info p,
-.cert-info p,
-.date{
-  color:var(--muted);       /* mid-grey (#A0A0A0) */
-}
