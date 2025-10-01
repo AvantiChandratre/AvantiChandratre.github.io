@@ -85,3 +85,35 @@ section>h2{text-align:center;margin:0 auto 2rem;max-width:var(--max-width);}
 
 a.glow{transition:color .2s, text-shadow .2s;}
 a.glow:hover{color:var(--accent);text-shadow:0 0 8px var(--accent);}
+
+/* =====  COLOUR RESET – COSMIC DARK  ===== */
+body,
+p,
+span,
+time,
+h1,h2,h3,
+nav a,
+.proj-info p,
+.cert-info p,
+.timeline-item p,
+.card span,
+.box p{
+  color:var(--text);        /* light grey (#E6E6E6) */
+}
+h1,h2,h3,
+.proj-info h3,
+.cert-info h3,
+.timeline-item h3,
+.card strong{
+  color:var(--heading);     /* lavender (#B97CF9) */
+}
+a,
+.timeline-item a,
+.contact-bar a{
+  color:var(--accent);      /* violet (#BB5FFF) */
+}
+.muted,
+.proj-info p,
+.cert-info p{
+  color:var(--muted);       /* mid-grey (#A0A0A0) */
+}
