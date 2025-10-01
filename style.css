@@ -117,3 +117,29 @@ a,
 .cert-info p{
   color:var(--muted);       /* mid-grey (#A0A0A0) */
 }
+
+/* =====  COMPACT 2-LINE TIMELINE  ===== */
+.timeline-item{
+  width:46%;
+  padding:1rem 1.2rem;
+  margin-bottom:1.5rem;
+}
+.timeline-item .company{
+  font-size:1rem;
+  font-weight:700;
+  color:#5B9BD5;          /* bold blue company */
+  margin:0;
+}
+.timeline-item .designation{
+  font-size:.9rem;
+  font-style:italic;
+  color:var(--text);
+  margin:0;
+}
+.timeline-item .date{
+  font-size:.85rem;
+  color:var(--muted);
+  margin-left:.4rem;
+}
+.timeline-item p{margin:.25rem 0 0;}
+.timeline-item a.glow{float:right;margin-top:-.2rem;}
